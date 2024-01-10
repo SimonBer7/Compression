@@ -1,7 +1,9 @@
 
 # Compressor Application
 
-Vítejte v aplikaci Compressor! Tento Python program poskytuje funkcionalitu pro komprimaci a dekomprimaci textových souborů a zároveň umožňuje zaznamenávání operací do logu.
+Vítejte v aplikaci Compressor! Tento Python program poskytuje funkcionalitu pro komprimaci a dekomprimaci textových souborů a zároveň umožňuje zaznamenávání operací do logu.    
+     
+**Šimon Bernard, C4b**
 
 ## Obsah
 
@@ -10,7 +12,6 @@ Vítejte v aplikaci Compressor! Tento Python program poskytuje funkcionalitu pro
 - [Struktura Souborů](#struktura-souborů)
 - [Použití](#použití)
 - [Konfigurace](#konfigurace)
-- [Závislosti](#závislosti)
 
 ## Popis
 
@@ -24,17 +25,36 @@ Aplikace Compressor umožňuje komprimovat a dekomprimovat textové soubory pomo
 
 ## Struktura Souborů
 
-- **`compressor.py`**: Obsahuje hlavní třídu `Compressor` s metodami pro kompresi, dekompresi a kontrolu souborů.
-- **`logmanager.py`**: Implementuje třídu `LogManager`, která zajišťuje operace logování.
-- **`configuration.py`**: Spravuje konfigurační nastavení, jako jsou názvy vstupního a výstupního souboru.
-- **`main.py`**: Hlavní vstupní bod aplikace s uživatelským rozhraním a příkazovou řádkou.
+- **`comp/`**: Adresář pro soubory compressor.py a logmanager.py.
+    -  **`compressor.py`**: Obsahuje hlavní třídu `Compressor` s metodami pro kompresi, dekompresi a kontrolu souborů. 
+    - **`logmanager.py`**: Implementuje třídu `LogManager`, která zajišťuje operace logování.
+
+ -  **`conf/`**: Adresář pro konfiguraci.
+    - **`configuration.py`**: Spravuje konfigurační nastavení, jako jsou názvy vstupního a výstupního souboru.
+
 - **`logs/`**: Adresář pro ukládání logovacích souborů.
+    - **`log.txt`**: Soubor pro ukládání zpětných zpráv. 
+
+-  **`src/`**: Adresář soubory input.txt a output.txt.
+    - **`input.txt/`**: Vstupní text.
+    - **`output.txt/`**: Výstupní text.
+
+ -  **`test_data/`**: Adresář s testovými soubory pro unittesty.
+    - **`test_input.txt/`**: Vstupní text pro unittesty.  
+    - **`test_output.txt/`**: Výstupní text pro unitesty.
+
+-  **`unittesting/`**: Adresář s unittesty.
+    - **`testCompressor.py/`**: Zde se provádí unittesty.
+
+- **`main.py`**: Hlavní vstupní bod aplikace s uživatelským rozhraním.
+
 
 ## Použití
 
 1. **Nastavení:**
-    - Spusťte `main.py`.
-    - Vyberte mezi výchozím nastavením a vlastním nastavením.
+    - git clone https://github.com/SimonBer7/Compression.git
+    - cd Compression
+    - python main.py
 
 2. **Možnosti:**
     - **Komprese souboru:** Volba 1 v menu. Kompresuje zadaný vstupní soubor.
@@ -49,10 +69,6 @@ Aplikace Compressor umožňuje komprimovat a dekomprimovat textové soubory pomo
 - Výchozí výstupní soubor: "output.txt"
 
 Během nastavení můžete upravit názvy vstupního a výstupního souboru.
-
-## Závislosti
-
-- Python 3.x
 
 Užijte si komprimaci a dekomprimaci souborů s aplikací Kompresor! Pokud narazíte na nějaké problémy, podívejte se do logů pro více informací.
 
