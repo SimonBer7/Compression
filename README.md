@@ -51,7 +51,7 @@ Aplikace Compressor umožňuje komprimovat a dekomprimovat textové soubory pomo
 
 ## Použití
 
-1. **Nastavení:**
+1. **Nastavení (commands):**
     - git clone https://github.com/SimonBer7/Compression.git
     - cd Compression
     - python main.py
